@@ -1,22 +1,17 @@
+
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        {% load static %}
-        <link rel="stylesheet" href="{% static 'base.css' %}">
-        <title>Quotes-Galore-Site</title>
-    </head>
-
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Quotes-Galore-Site{% endblock %}</title>
+</head>
 <body>
-    <!-- <h1>This is where I should put my navbar</h1> -->
-    <!-- this h1 navbar would get replaced by -->
+    <h1>This is where I should put my navbar</h1>
     {% include 'navbar.html' %}
-
-
-    <!-- To define a template for a particular view, first specify the base template using the extends template tag. Then declare section to replace, by using block/endblock sections as in the base template. -->
+  <main>
     {% block content %}
-    replace me
     {% endblock %}
+  </main>
 </body>
 </html>
