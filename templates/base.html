@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
         <title>Quotes-Galore-Site</title>
     </head>
 
@@ -10,6 +13,7 @@
     {% include 'navbar.html' %}
 
 
+    <!-- To define a template for a particular view, first specify the base template using the extends template tag. Then declare section to replace, by using block/endblock sections as in the base template. -->
     {% block content %}
     replace me
     {% endblock %}
